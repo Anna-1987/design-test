@@ -1,0 +1,531 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F7F4;
+    color: rgba(45, 45, 45, 1);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
+
+
+.header {
+    height: 82px;
+    background:#2D2D2D;
+    color: #F8F7F4;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 70px;
+    padding-right: 30px;
+    border-radius:  0px 0px 24px 24px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+ .contact {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+  .contact a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+  }
+
+/* nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+} */
+
+
+nav a:hover {
+    color: rgba(192, 192, 192, 1);
+    cursor: pointer;
+}
+
+.main {
+    padding: 50px 0;
+    text-align: center;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+    background-color: rgba(246, 246, 246, 1);
+}
+.hero-text {
+    max-width: 50%;
+}
+.hero_titlle1{
+    font-size: 80px;
+    width: 801px;
+    line-height: 80px;
+    color: rgba(255, 102, 0, 1);
+    text-align: left;
+}
+.hero_titlle2{
+    color: rgba(45, 45, 45, 1);
+}
+.hero_paragrahp{
+    font-size: 32px;
+    width: 801px;
+    line-height: 100%;
+    color: rgba(45, 45, 45, 1);
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+.hero_btn{
+    width: 801px;
+    height: 72px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: rgba(255, 102, 0, 1);
+    border-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+.hero img {
+    width: 791px;
+    height: 492px;
+    border-radius: 10px;
+}
+
+.sections {
+    flex-direction: column;
+    /* width: 1780px; */
+    height: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 60px 0;
+}
+
+
+.section1{
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sections_blocks{
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+
+}
+.btn-section1{
+    width: 200px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.image-container {
+    width: 791px;
+    height: 497px;
+    position: relative;
+    margin-left: 128px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+.btn {
+    background: #ED772F;
+    color: #F8F7F4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #C74719;
+}
+
+.footer {
+    background: #494949;
+    color: #B7B7B9;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+
+/*           SECTION2         */
+.card2{
+    /* width: 880px;
+    height: 349px; */
+    display: flex;
+    padding-left: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgba(246, 246, 246, 1);
+    justify-content: left;
+}
+.card-content_section2{
+    width: 466px;
+    height: 180px;
+   
+}
+.title_card_section2{
+    font-family: Regular;
+    text-align: left;
+    font-size: 32px;
+    color: rgba(45, 45, 45, 1);
+}
+
+.star{
+    width: 44px;
+    height: 44px;
+    color: #ED772F;
+    stroke: red;
+}
+
+.titlle_section2{
+    font-family: Bolt;
+    font-size: 40px;
+    color: #2D2D2D;
+}
+.titlle2_section2{
+    font-family: Bolt;
+    font-size: 40px;
+    color: rgba(255, 102, 0, 1);
+}
+.paragraph_section2{
+    font-family: Regular;;
+    text-align: left;
+    font-size: 24px;
+    color: rgba(128, 128, 128, 1);
+}
+.bottom_blocks{
+    margin-left: 20px;
+}
+
+/*     section 3 */
+      
+.pricing,
+.services {
+    padding: 40px;
+}
+.titlle_section3{
+    font-size: 48px;
+    line-height: 52px;
+}
+        
+.highlight {
+    color: rgba(255, 102, 0, 1);
+    font-weight: bold; }
+        
+.description {
+ font-size: 32px;
+ line-height: 100%;
+ color: rgba(128, 128, 128, 1);
+ padding: 20px 0px 60px 0px;
+ width: 1028px;
+}
+        
+.pricing-cards,
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* .card_section3{
+    width: 580px;
+    height: 813px;
+} */
+        
+.card_section3,
+.service-card {
+    background-color:rgba(246, 246, 246, 1);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 580px;
+    height: 813px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.card-titlle{
+border-radius: 20px;
+border: 2px solid rgba(45, 45, 45, 1);
+width: 80px;
+padding: 10px 20px;
+}
+        
+.featured {
+    background: black;
+    color: white;
+}
+        
+.card_section3:hover,
+.service-card:hover {
+    transform: scale(1.05);
+}
+.leads{
+    font-size: 36px;
+    line-height: 1.17em;
+    color: rgba(45, 45, 45, 1);
+}
+        
+.price_card4,
+.price span {
+    background: linear-gradient(to right,
+                rgba(255, 102, 0, 1),
+                rgba(242, 102, 89, 1),
+                rgba(240, 97, 119, 1),
+                rgba(229, 93, 151, 1),
+                rgba(202, 70, 210, 1),
+                rgba(141, 19, 249, 0.5));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.description_card3{
+    font-size: 24px;
+    line-height: 100%;
+    color: rgba(128, 128, 128, 1);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+        
+.btn_section3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    left: 100%;
+
+    background: rgba(255, 102, 0, 1);
+    border: none;
+    margin-bottom: auto ;
+    padding: 10px;
+    width: 500px;
+    height: 72px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn_section4{
+    width: 650px;
+    border: none;
+    margin-top: 20px;
+}
+        
+.btn_section3:hover {
+    background: darkorange;
+}
+.service-card{
+    width: 730px;
+    height: 330px;
+    margin-top: 40px;
+}
+.card4_text{
+width: 566px;
+height: 84px;
+padding-bottom: 30px;
+padding-right: 94px;
+}
+.star_card4{
+    margin-left: 414px;
+}
+.star_card4_2{
+    margin-left: 210px;
+}
+.titlle_card4{
+    font-size: 36px;
+    left:1.17em;
+    margin-bottom: 20px;
+}
+        
+.list_section3{
+    font-size: 24px;
+    line-height: 100%;
+    color: rgba(45, 45, 45, 1);
+
+    position: relative;
+    padding-left: 25px;/* Отступ для галочки */
+    padding-top: 20px;
+}
+ul {
+    list-style: none;/* Убираем стандартные маркеры */
+    padding-left: 0;
+}
+.list_section3::before {
+    content: '✔';/* Символ галочки */
+    color: rgba(45, 45, 45, 1);/* Цвет галочки */
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.list2_section3{
+    font-weight: bold;
+}
+.list_section3_black{
+    color: rgba(255, 255, 255, 1);
+}
+.list_section3_black::before{
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Секция Клиенты,
+которые уже покупают Лидов для своего бизнеса и Отзывы клиентов */
+
+.clients,
+.reviews {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.clients_card5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.clients_img{
+    display: flex;
+    width: 430px;
+    height: 200px;
+    background-color: rgba(246, 246, 246, 1);
+    border: solid 1px red;
+    border-radius: 30px;
+    justify-content: center;
+        align-items: center;
+}
+.all_review-card{
+    display: flex;
+}
+.review-card_last:not(:last-child){
+margin-right: 20px;
+}
+
+.review-card {
+    display: inline-block;
+    width: 430px;
+    height: 636px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+ .video-reviews {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     padding: 50px 0;
+ }
+
+ .video-reviews video {
+     width: 300px;
+     height: 200px;
+     border-radius: 10px;
+ }
+
+
+ /* Секция Технология «Лид Конвейер» .....Как это работает? */
+.technology,
+.register,
+.how-it-works {
+    padding: 50px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.technology {
+    background: #f0f8ff;
+    text-align: left;
+}
+
+.register {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+}
+
+.register button {
+    background: white;
+    color: #ff6600;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.how-it-works {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+  .slider {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+  }
+
+  .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      background: #f9f9f9;
+  }
+
+  .pagination {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .pagination button {
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+  }

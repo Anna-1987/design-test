@@ -94,34 +94,47 @@ function buyPlan(plan, price) {
                     // `;
                     // starsContainer.appendChild(star);
                 });
-        });
+ });
 
-            function showStep(index) {
-                const steps = document.querySelectorAll('.step');
-                const buttons = document.querySelectorAll('.pagination button');
+
+ 
+
+
+    function showStep(index) {
+        document.querySelector(".steps").style.transform = `translateX(-${index * 100}%)`;
+        document.querySelectorAll(".pagination button").forEach((btn, i) => {
+            btn.classList.toggle("active", i === index);
+        });
+    }
+        
+// const stepsEl = document.querySelectorAll('activ-btn');
+// console.log(stepsEl);
+// const nextCard = document.getElementById('next-card');
+// console.log(nextCard.classList.contains);
+
+// stepsEl.addEventListener('click',  function() {
+                 
+//     if (stepsEl.classList.contains('active') === 'active') {
+      
+//         nextCard.classList.remove('active');
+//         stepsEl.classList.remove('active');
+    
+        
+//     } else {
+//          nextCard.classList.add('active');
+//         stepsEl.classList.add('active');
+//     }
+        
+    
                 
-                steps.forEach(step => step.classList.remove('active'));
-                buttons.forEach(button => button.classList.remove('active'));
-                
-                steps[index].classList.add('active');
-                buttons[index].classList.add('active');
-            }
+//     }
+               
+//            )
 
 function playVideo() {
             alert("Здесь будет воспроизводиться видео!");
         }
 
-// function toggleAnswer(element) {
-//             let answer = element.nextElementSibling;
-//             let symbol = element.querySelector(".faq-symbol");
-//             if (answer.style.display === "none" || answer.style.display === "") {
-//                 answer.style.display = "block";
-//                 symbol.textContent = "−";
-//             } else {
-//                 answer.style.display = "none";
-//                 symbol.textContent = "+";
-//             }
-//         }
 
         
 document.querySelectorAll('.faq-question').forEach(item => {
@@ -147,7 +160,7 @@ document.querySelectorAll('.faq-question').forEach(item => {
             const btn = document.getElementById("toggle-btn");
             const text = document.getElementById("more-text");
        const textP = document.getElementById('litlle-text');
-       console.log(textP.textContent);
+    //    console.log(textP.textContent);
 
             btn.addEventListener("click", function () {
                 if (text.style.display === "none" || text.style.display === "") {
